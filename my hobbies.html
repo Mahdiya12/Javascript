@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+
+    <style>
+        body.dark {
+            color: white;
+            background-color: black;
+        }
+    
+        button {
+            display: block;
+            padding: 5px;
+        }
+    
+        .textEntry {
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    
+    </head>
+    
+    <body>
+    
+        <h1>My Hobbies</h1>
+        <p id="story">I love spending my free time doing fun things!</p>
+        <button onclick="goDark()">Get in the mood</button>
+        <div class="textEntry">Type your favorite hobby here: <input type="text" id="hobby"></div>
+        <button onclick="typeAndCheer()">Click me if you dare!</button>
+        <button onclick="finishTheStory()">Tell me more</button>
+    
+        <script>
+            function typeAndCheer() {
+                var hobby = document.getElementById("hobby").value;
+                alert("Wow! " + hobby + " sounds amazing!")
+            }
+
+            function goDark() {
+                document.body.className = "dark";
+            }
+
+            function finishTheStory() {
+                document.getElementById("story").innerHTML = "Sometimes I enjoy reading, painting, or just exploring new hobbies!"
+            }
+        </script>
+    
+</body>
+</html>
