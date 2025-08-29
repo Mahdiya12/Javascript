@@ -6,23 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our solar system</title>
 
-<style>
-    .styles ol li {
-        margin-bottom: 10px;
-        /* adds space below each list item */
-        line-height: 1.5;
-        /* increases the vertical spacing */
-    }
+    <style>
+        .styles ol li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
 
-    .styles {
-    background-color: darkslateblue;
-    color: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    }
-
-</style>
+        .styles {
+            background-color: darkslateblue;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+    </style>
 
 </head>
 
@@ -33,9 +30,9 @@
         <p>Our solar system works amazingly for us!</p>
         <p>Let's explore <i>our </i>planet, <b>Earth</b>!</p>
     </header>
-    
+
     <script>
-        let planetDiv = document.createElement("div")  // use planetDiv everywhere
+        let planetDiv = document.createElement("div")
         planetDiv.id = "earth"
         planetDiv.className = "styles"
         planetDiv.innerHTML = "Earth helps us in many ways:" +
@@ -54,9 +51,9 @@
         document.body.append(planetDiv)
 
         let heading = document.getElementById("header")
-            heading.innerHTML = "🌏 Our Planet in the Solar System 🌏"
+        heading.innerHTML = "🌏 Our Planet in the Solar System 🌏"
 
-            document.querySelector('header p').innerHTML = '<strong>Discovering a planet</strong>'
+        document.querySelector('header p').innerHTML = '<strong>Discovering a planet</strong>'
     </script>
 </body>
 
