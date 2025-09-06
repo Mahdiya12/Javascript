@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        nav {
+            background-color: bisque;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 2px;
+            padding: 2px;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            margin: 5px;
+            background-color: cornflowerblue;
+            padding: 5px;
+        }
+
+        li a:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <h2>About myself</h2>
+        <img src="gb.jpg" alt="">
+        <br>
+        <button onclick="myinfo()">Read More</button>
+
+        <h2>What I like</h2>
+        <p id="my-info-1"></p>
+        <img src="bas.jpeg" alt="">
+        <br>
+        <button onclick="mylikes()">Read more</button>
+        <p id="my-info-2"></p>
+
+        <script>
+            function myinfo() {
+                document.getElementById("my-info-1").innerHTML = "Hi! I am Mahdiya. I am 12 currently and are already preparing for my o-levels. I am passionate about things but really lazy, which I am trying to over come.I live in Dhaka, Kalabagan. We moved here last here. i am a very organized person"
+            }
+
+            function mylikes() {
+                document.getElementById("my-info-2").innerHTML = "I love sports, specially basketball. for now, my practise is at a stop cause of too much study pressure but i really miss playing basketball. i wanna go back to the court an make every single shot. i enjoy reading too. I am trying to study as hard as possible caus ei am not letting my future slip away, im gonna make my parents proud. i must achieve my dreams"
+            }
+
+        </script>
+
+
+    </body>
+
+</html>
